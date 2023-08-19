@@ -1,0 +1,60 @@
+@import "styles/vars"
+@import "styles/functions"
+
+* 
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+
+html,
+body 
+  max-width: 100vw
+  overflow-x: hidden
+
+
+body 
+  background: $cyan-900
+
+
+body, input, textarea, button
+  font-family: "Roboto", sans-serif
+  font-size: rem(16px)
+  line-height: rem(20px)
+  color: $gray-100
+
+
+h1, .header-1 
+  font-size: rem(32px)
+  line-height: rem(40px)
+  font-weight: 600
+
+
+h2, .header-2 
+  font-size: rem(20px)
+  line-height: rem(24px)
+  font-weight: 600
+
+
+h3, .header-3 
+  font-size: rem(16px)
+  line-height: rem(20px)
+  font-weight: 600
+
+
+h4, .header-4 
+  font-size: rem(14px)
+  line-height: rem(18px)
+  font-weight: 600
+  
+
+a 
+  color: inherit
+  text-decoration: none
+
+
+@media (prefers-color-scheme: dark) 
+  html 
+    color-scheme: dark
+  
+
