@@ -1,5 +1,6 @@
-@import "styles/vars"
-@import "styles/functions"
+@import "@styles/vars"
+@import "@styles/functions"
+@import "@styles/placeholders"
 
 * 
   box-sizing: border-box
@@ -32,25 +33,21 @@ h1, h2, h3, h4, h5, h6, strong
     font-weight: 600
 
 
-h1, .header-1 
-  font-size: rem(32px)
-  line-height: rem(40px)
+h1
+  @extend %heading-1
 
 
-h2, .header-2 
-  font-size: rem(20px)
-  line-height: rem(24px)
+h2
+  @extend %heading-2
 
 
-h3, .header-3 
-  font-size: rem(16px)
-  line-height: rem(20px)
+h3
+  @extend %heading-3
 
 
-h4, .header-4 
-  font-size: rem(14px)
-  line-height: rem(18px)
-  
+h4 
+  @extend %heading-4
+
 
 a 
   color: inherit
@@ -61,4 +58,19 @@ a
   html 
     color-scheme: dark
   
+
+button
+    background: transparent
+    border: 2px solid $gray-700
+    padding: 15px 20px
+    border-radius: 4px
+    font-size: rem(18px)
+    line-height: rem(20px)
+
+    position: relative
+
+    transition: 0.3s ease
+    
+    &:hover
+        color: $gray-100
 

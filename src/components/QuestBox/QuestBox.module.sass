@@ -1,0 +1,29 @@
+@import "@styles/vars"
+@import "@styles/functions"
+
+.container
+    text-align: center
+
+    .buttonContainer
+        display: flex
+        flex-direction: column
+        gap: 16px
+
+        button
+
+            &.primary
+                &:hover
+                    background-color: $sky-600
+                    border-color: $sky-600
+
+    .questContainer
+        display: flex
+        flex-direction: column
+
+        gap: rem(20px)
+
+        .buttonDanger
+            &:hover
+                background-color: $red-500
+                border-color: $red-500
+           
