@@ -1,3 +1,4 @@
+import { QuestsProvider } from 'context/QuestsContext'
 import './globals.sass'
 
 import { Roboto } from 'next/font/google'
@@ -14,8 +15,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={roboto.className}>{children}</body>
-    </html>
+    <QuestsProvider>
+      <html lang="en">
+        <body className={roboto.className}>{children}</body>
+      </html>
+    </QuestsProvider>
   )
 }
